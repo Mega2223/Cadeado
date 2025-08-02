@@ -69,4 +69,13 @@ begin
 			
 		end case;
 	end process;
+	state_reg_fun: process(CLK,RESET)
+	begin
+		if RESET = '1' then
+			state <= A;
+		elsif CLK'event and CLK = '1' then
+			state <= next_state;
+		end if;
+		
+	end process;
 end;
