@@ -41,30 +41,30 @@ begin
 				
 			when B =>
 				if X = '1' then
-					next_state <= B;
+					next_state <= C;
 				else
-					next_state <= B;
+					next_state <= A;
 				end if;
 			
 			when C =>
 				if X = '1' then
-					next_state <= B;
+					next_state <= C;
 				else
-					next_state <= B;
+					next_state <= D;
 				end if;
 			
 			when D =>
 				if X = '1' then
-					next_state <= B;
+					next_state <= E;
 				else
-					next_state <= B;
+					next_state <= A;
 				end if;
 			
 			when E =>
 				if X = '1' then
 					next_state <= B;
 				else
-					next_state <= B;
+					next_state <= A;
 				end if;
 			
 		end case;
