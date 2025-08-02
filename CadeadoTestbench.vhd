@@ -1,5 +1,5 @@
 library ieee;
-use ieee.std_logic_1164.all, ieee.std_logic_unsigned.all;
+use ieee.std_logic_1164.all;
 entity seq_rec_testbench is
 end seq_rec_testbench;
 
@@ -8,9 +8,8 @@ architecture testbench of seq_rec_testbench is
 	signal test_sequence : std_logic_vector(0 to 10)
 	:= "01110101100";
 	constant PERIOD : time := 100 ns;
-	component seq_rec is
-	port(CLK, RESET, X: in std_logic;
-	Z: out std_logic);
+	component Cadeado is
+		port(CLK, RESET, X: in std_logic; Z: out std_logic);
 	end component;
 begin
 	u1: seq_rec port map(clock, reset, X, Z);
