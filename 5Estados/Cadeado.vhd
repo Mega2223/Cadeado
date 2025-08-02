@@ -11,7 +11,7 @@ entity Cadeado is
 end Cadeado;
 
 architecture process_1 of Cadeado is
-	type state_type is (A, B, C, D);
+	type state_type is (A, B, C, D, E);
 	signal state, next_state : state_type;
 begin
 	output_fun: process (X, state)
@@ -25,6 +25,8 @@ begin
 				Z <= '0';
 			when D =>
 				Z <= '0';
+			when E =>
+				Z <= '1';
 		end case;
 	end process;
 	next_state_fun: process (X,state)
@@ -52,6 +54,13 @@ begin
 				end if;
 			
 			when D =>
+				if X = '1' then
+					next_state <= E;
+				else
+					next_state <= A;
+				end if;
+			
+			when E =>
 				if X = '1' then
 					next_state <= B;
 				else
