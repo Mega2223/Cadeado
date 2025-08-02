@@ -24,7 +24,11 @@ begin
 			when C =>
 				Z <= '0';
 			when D =>
-				Z <= '0';
+				if X = '1' then
+					Z <= '1';
+				else
+					Z <= '0';
+				end if;
 		end case;
 	end process;
 	next_state_fun: process (X,state)
