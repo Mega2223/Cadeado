@@ -3,7 +3,8 @@ use ieee.std_logic_1164.all;
 
 entity Cadeado5 is
 	port(
-		SW: in std_logic_vector(0 downto 0); -- so entra 1 bit
+		KEY,
+		SW: in std_logic_vector(1 downto 0); -- so entra 1 bit
 		HEX0, --esse eh o mais a direita se eu nao me engano
 		HEX1,
 		HEX2: out std_logic_vector(6 downto 0)
@@ -37,9 +38,9 @@ begin
 				HEX1 <= "0000000";
 				HEX2 <= "0000000";
 			when E =>
-				HEX0 <= "0000000"; -- F
-				HEX1 <= "0000000"; -- O
-				HEX2 <= "0000000"; -- I
+				HEX0 <= "0101010"; -- F
+				HEX1 <= "0101010"; -- O Fica de tarefa pra eu fazer no lab kkkkkk
+				HEX2 <= "0101010"; -- I
 		end case;
 	end process;
 	state_fun: process(SW,state)
@@ -81,5 +82,11 @@ begin
 				end if;
 			
 		end case;
+	end process;
+	next_fun: process(KEY)
+	begin
+		if rising_edge(KEY(0)) then
+			state <= next_state;
+		end if;
 	end process;
 end;
