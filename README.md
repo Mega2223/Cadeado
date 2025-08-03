@@ -8,7 +8,7 @@ Eu também inclui todas as simulações no projeto (e saíram alguns arquivos re
 
 ```
 Raiz  
-|-Wave          <-- Implementações ingênuas para rodar no GHDL e testar no GTKWave   
+|- Wave          <-- Implementações ingênuas para rodar no GHDL e testar no GTKWave   
 |- |- 4 Estados   <-- Códigos da máquina de Mealy (só precisa de 4 estados)   
 |- |- 5 Estados   <-- Códigos da máquina de Moore (precisa de 5 estados)   
 |- Placa         <-- Implementações para a placa DE10-Lite Altera   
