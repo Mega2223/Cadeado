@@ -1,0 +1,6 @@
+
+entity Cadeado5 is
+	port(
+		
+	);
+end Cadeado5;

@@ -1,9 +1,9 @@
 library ieee;
 use ieee.std_logic_1164.all;
-entity cadeadotestbench is
-end cadeadotestbench;
+entity cadeado5testbench is
+end cadeado5testbench;
 
-architecture testbench of cadeadotestbench is
+architecture testbench of cadeado5testbench is
 	signal clock: std_logic_vector(1 downto 0);
 	signal X: std_logic_vector(0 downto 0);
 	signal HEX0, HEX1, HEX2:  std_logic_vector(6 downto 0);
