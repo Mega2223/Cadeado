@@ -1,6 +1,8 @@
 # Mega2223/Cadeado
 
-Esse é o meu código para o meu projeto final da matéria de Sistemas Digitais, um código VHDL que implementa um cadeado sequencial que reconhece a sequência binária "1101", com implementações do modelo de Moore e no modelo de Mealy.
+Esse é o meu código para o meu projeto final da matéria de Sistemas Digitais, um código VHDL que implementa um cadeado sequencial que reconhece a sequência binária "1101", com implementações do modelo de Moore e no modelo de Mealy.   
+
+Eu também inclui todas as simulações no projeto (e saíram alguns arquivos residuais também, perdão :p).
 
 ## Estrutura
 
