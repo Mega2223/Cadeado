@@ -1,4 +1,0 @@
-v 4
-file . "Cadeado.vhd" "890344549aecf2fa4ee0c7e358e23b4354573a65" "20250802201028.967":
-  entity cadeado at 1( 0) + 0 on 11;
-  architecture process_1 of cadeado at 13( 157) + 0 on 12;

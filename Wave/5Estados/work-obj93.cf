@@ -1,0 +1,7 @@
+v 4
+file . "CadeadoTestbench.vhd" "be09fc593bbad3faf0f0742aa510cbc14e191897" "20250802205102.302":
+  entity cadeadotestbench at 1( 0) + 0 on 35;
+  architecture testbench of cadeadotestbench at 6( 98) + 0 on 36;
+file . "Cadeado.vhd" "890344549aecf2fa4ee0c7e358e23b4354573a65" "20250802205102.278":
+  entity cadeado at 1( 0) + 0 on 33;
+  architecture process_1 of cadeado at 13( 157) + 0 on 34;
