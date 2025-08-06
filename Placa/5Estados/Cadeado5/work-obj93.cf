@@ -1,7 +1,0 @@
-v 4
-file . "Cadeado5Testbench.vhd" "102499334c4221dedbc7aae460fb2a49ad235a2b" "20250803213623.470":
-  entity cadeado5testbench at 1( 0) + 0 on 25;
-  architecture testbench of cadeado5testbench at 6( 100) + 0 on 26;
-file . "Cadeado5.vhd" "fbad63124436a8844de72b796412ebf90fae914f" "20250803213623.441":
-  entity cadeado5 at 1( 0) + 0 on 23;
-  architecture behavior of cadeado5 at 17( 536) + 0 on 24;

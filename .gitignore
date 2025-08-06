@@ -1,1 +1,4 @@
+*.bak
+*.qsf
 *.cf
+*.qws
